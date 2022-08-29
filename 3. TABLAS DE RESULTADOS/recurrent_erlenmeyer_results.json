@@ -1,0 +1,177 @@
+{
+	"flo-ap13": {
+		"spp": {
+			"model_id": "00005",
+			"score_mse": 37540.24490778658,
+			"score_std": 25589.39926690114,
+			"T": 6,
+			"F": 6,
+			"model_type": "gru",
+			"L": 1,
+			"H": 10,
+			"path": "C:\\Users\\abrah\\OneDrive\\Maestría en Sistemas\\TRABAJO DE GRADO 1\\DATA\\FLORENA AP13"
+		},
+		"tq": {
+			"model_id": "00024",
+			"score_mse": 0.6163480355379786,
+			"score_std": 0.4870405681012008,
+			"T": 10,
+			"F": 6,
+			"model_type": "gru",
+			"L": 2,
+			"H": 5,
+			"path": "C:\\Users\\abrah\\OneDrive\\Maestría en Sistemas\\TRABAJO DE GRADO 1\\DATA\\FLORENA AP13"
+		},
+		"hkl": {
+			"model_id": "00036",
+			"score_mse": 18619.61888388134,
+			"score_std": 9834.277158624807,
+			"T": 10,
+			"F": 6,
+			"model_type": "gru",
+			"L": 2,
+			"H": 5,
+			"path": "C:\\Users\\abrah\\OneDrive\\Maestría en Sistemas\\TRABAJO DE GRADO 1\\DATA\\FLORENA AP13"
+		}
+	},
+	"flo-tp12": {
+		"spp": {
+			"model_id": "00037",
+			"score_mse": 2083.187890339829,
+			"score_std": 1639.674988034882,
+			"T": 6,
+			"F": 6,
+			"model_type": "srnn",
+			"L": 1,
+			"H": 10,
+			"path": "C:\\Users\\abrah\\OneDrive\\Maestría en Sistemas\\TRABAJO DE GRADO 1\\DATA\\Floreña TP12"
+		},
+		"tq": {
+			"model_id": "00060",
+			"score_mse": 9.174860846655367,
+			"score_std": 2.764590327755579,
+			"T": 10,
+			"F": 6,
+			"model_type": "gru",
+			"L": 2,
+			"H": 5,
+			"path": "C:\\Users\\abrah\\OneDrive\\Maestría en Sistemas\\TRABAJO DE GRADO 1\\DATA\\Floreña TP12"
+		},
+		"hkl": {
+			"model_id": "00072",
+			"score_mse": 155.1483937200266,
+			"score_std": 102.81720089928024,
+			"T": 10,
+			"F": 6,
+			"model_type": "gru",
+			"L": 2,
+			"H": 5,
+			"path": "C:\\Users\\abrah\\OneDrive\\Maestría en Sistemas\\TRABAJO DE GRADO 1\\DATA\\Floreña TP12"
+		}
+	},
+	"psc-8": {
+		"spp": {
+			"model_id": "00073",
+			"score_mse": 143577.1929481263,
+			"score_std": 91855.257582165,
+			"T": 6,
+			"F": 6,
+			"model_type": "srnn",
+			"L": 1,
+			"H": 10,
+			"path": "C:\\Users\\abrah\\OneDrive\\Maestría en Sistemas\\TRABAJO DE GRADO 1\\DATA\\Pauto Sur CP8"
+		},
+		"tq": {
+			"model_id": "00096",
+			"score_mse": 3.720516450504172,
+			"score_std": 3.3068438856700199,
+			"T": 10,
+			"F": 6,
+			"model_type": "gru",
+			"L": 2,
+			"H": 5,
+			"path": "C:\\Users\\abrah\\OneDrive\\Maestría en Sistemas\\TRABAJO DE GRADO 1\\DATA\\Pauto Sur CP8"
+		},
+		"hkl": {
+			"model_id": "00097",
+			"score_mse": 1110.9646654147119,
+			"score_std": 747.6628240035013,
+			"T": 6,
+			"F": 6,
+			"model_type": "srnn",
+			"L": 1,
+			"H": 15,
+			"path": "C:\\Users\\abrah\\OneDrive\\Maestría en Sistemas\\TRABAJO DE GRADO 1\\DATA\\Pauto Sur CP8"
+		}
+	},
+	"pscp-10": {
+		"spp": {
+			"model_id": "00119",
+			"score_mse": 122935.1363314843,
+			"score_std": 306169.61935467869,
+			"T": 10,
+			"F": 6,
+			"model_type": "srnn",
+			"L": 1,
+			"H": 10,
+			"path": "C:\\Users\\abrah\\OneDrive\\Maestría en Sistemas\\TRABAJO DE GRADO 1\\DATA\\Pauto Sur Cp10"
+		},
+		"tq": {
+			"model_id": "00127",
+			"score_mse": 3.3215859892876886,
+			"score_std": 4.792118718797317,
+			"T": 10,
+			"F": 6,
+			"model_type": "gru",
+			"L": 1,
+			"H": 10,
+			"path": "C:\\Users\\abrah\\OneDrive\\Maestría en Sistemas\\TRABAJO DE GRADO 1\\DATA\\Pauto Sur Cp10"
+		},
+		"hkl": {
+			"model_id": "00141",
+			"score_mse": 2518.5351404610535,
+			"score_std": 3653.7796483192616,
+			"T": 10,
+			"F": 6,
+			"model_type": "lstm",
+			"L": 1,
+			"H": 10,
+			"path": "C:\\Users\\abrah\\OneDrive\\Maestría en Sistemas\\TRABAJO DE GRADO 1\\DATA\\Pauto Sur Cp10"
+		}
+	},
+	"p-j7": {
+		"spp": {
+			"model_id": "00156",
+			"score_mse": 2149.452713094559,
+			"score_std": 687.7725627915795,
+			"T": 10,
+			"F": 6,
+			"model_type": "gru",
+			"L": 2,
+			"H": 5,
+			"path": "C:\\Users\\abrah\\OneDrive\\Maestría en Sistemas\\TRABAJO DE GRADO 1\\DATA\\PautoJ7"
+		},
+		"tq": {
+			"model_id": "00168",
+			"score_mse": 0.2800620169739435,
+			"score_std": 0.19944313652124466,
+			"T": 10,
+			"F": 6,
+			"model_type": "gru",
+			"L": 2,
+			"H": 5,
+			"path": "C:\\Users\\abrah\\OneDrive\\Maestría en Sistemas\\TRABAJO DE GRADO 1\\DATA\\PautoJ7"
+		},
+		"hkl": {
+			"model_id": "00179",
+			"score_mse": 448.44330730435208,
+			"score_std": 482.22104257190287,
+			"T": 10,
+			"F": 6,
+			"model_type": "gru",
+			"L": 1,
+			"H": 10,
+			"path": "C:\\Users\\abrah\\OneDrive\\Maestría en Sistemas\\TRABAJO DE GRADO 1\\DATA\\PautoJ7"
+		}
+	}
+}
