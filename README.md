@@ -95,7 +95,8 @@ It is noteworthy that the outlier scores are part of the search space. If the cl
 <ul>
 <li>
 
-<strong>Mean square error (MSE): </strong> It allows capturing the deviation from the nominal character in the window, highlighting peaks and collective anomalies by squared powering. For a predicted forecast window  $\bar{F}$  and, the MSE is calculated as: <br>
+<strong>Mean square error (MSE): </strong> 
+It allows capturing the deviation from the nominal character in the window, highlighting peaks and collective anomalies by squared powering. For a predicted forecast window  $\bar{F}$  and, the MSE is calculated as: <br>
 $$
 MSE^{(k)} = \frac{1}{F} \sum_{t=1}^{F} \left (\delta_t^{(k)} \right)^2
 $$
@@ -107,17 +108,48 @@ $$
 Where  $\delta_t^{(k)} = {c_{t,True}}^{(k)}-{\hat{c}_{t}}^{(k)}$  ,  ${c_{t,True}}$  is the real data point of channel  $k$  at time  $t$  and  ${\hat{c}_{t}}^{(k)}$  is the predicted value of channel $k$ at time $t$. <br><br>
 
 <li>
-<strong>Standard deviation of the squared deviations (σ): </strong>It allows to measure the dispersion of the deviations with respect to the nominal condition forecasting. i.e., it allows to capture the presence of abrupt jumps of the signal in the forecast window. As it can be noted, a collective anomaly would not have any relevant contrast in this predictor. Here is how to calculate this predictor for a forecast window F ̅:
+<strong>
+
+Standard deviation of the squared deviations ($\sigma$): </strong>
+
+It allows to measure the dispersion of the deviations with respect to the nominal condition forecasting. i.e., it allows to capture the presence of abrupt jumps of the signal in the forecast window. As it can be noted, a collective anomaly would not have any relevant contrast in this predictor. Here is how to calculate this predictor for a forecast window $\bar{F}$:
+
+$$
+\sigma^{(k)} = \sqrt{\frac{1}{F} \sum_{t=1}^F \left( {{\delta_t^{(k)}}^2 - \overline{{\delta_t^{(k)}}^2 }} \right)^2}
+$$
+
+Where $\overline{{\delta_t^{(k)}}^2 } = \frac{1}{F} \sum_{t=1}^F \left( {\delta_t^{(k)}} \right)^2$
+
 </li><br>
-<li>
-Kurtosis of squared deviations (ϑ): This is a measure of the "heaviness" of the tail in the data distribution, assuming normality —and therefore of the amount of noise. However, it is also a measure of contrast applicable to other distributions, and still useful for detecting contextual anomalies [15]. As re-ferred in the literature, this outlier score is highly handful in many anomaly de-tection applications [4] because the fourth power allows to further highlight deviations from the mean in the forecast window.
+<li> <strong>
+
+Kurtosis of squared deviations ($\vartheta$): </strong>
+
+This is a measure of the "heaviness" of the tail in the data distribution, assuming normality —and therefore of the amount of noise. However, it is also a measure of contrast applicable to other distributions, and still useful for detecting contextual anomalies [15]. As re-ferred in the literature, this outlier score is highly handful in many anomaly de-tection applications [4] because the fourth power allows to further highlight deviations from the mean in the forecast window.
+
+$$
+\vartheta^{(k)}=\frac{1}{F} \sum_{t=1}^{F} {{z_t^{(k)}}^4}
+$$
+
+Where $z_t = \frac{{\delta_t^{(k)}}^2 - \overline{\delta^{(k)^2}}}{\sigma^{(k)}}$
+
 </li>
 </ul>
 <br><p>
 The resultant matrix contains the contrast measures for each channel and the la-bel column with a binary encoding of the anomalous condition, as shown in table 1. The table contains random numbers only to illustrate the structure of the matrix.</p><br><p>
 
 Finally, the problem of detecting anomalous events in time series is generally linked to a pronounced imbalance of the classes, i.e., a very small number of positive cases (anomalies) compared to the number of negative (nominal) cases. There are different solutions proposed in the literature to perform data “augmentation”, from very simple ones (such as replication, noise injection, position inversion, among oth-ers) to more complex ones, such as the use of generative models (e.g. generative ad-versarial networks, GANs) [16].
-</p><br><p>
+</p><br>
+
+| &emsp;&emsp;&emsp;RC1 &emsp;&emsp;&ensp; |&emsp;&emsp;&emsp;RC2 &emsp;&emsp;&emsp; | &emsp;&emsp;&emsp;...  &emsp;&emsp;&emsp;&ensp; | Anomalous?  &ensp;&ensp;&ensp;    |
+| MSE | $\sigma$ | $\vartheta$ | MSE | $\sigma$ | $\vartheta$ | MSE | $\sigma$ | $\vartheta$ | Anomalous? |
+| --- | -------- | ----------- | --- | -------- | ----------- | --- | -------- | ----------- | ---------- |
+
+| Row 1 Column 1 | Row 1 Column 2 | Row 1 Column 3 |
+| Row 2 Column 1 | Row 2 Column 2 | Row 2 Column 3 |
+| Row 3 Column 1 | Row 3 Column 2 | Row 3 Column 3 |
+
+<p>
 We propose to stick to the simplest at first. In many occasions the resampling or replication of the positive cases results in classifiers with good performance, without incurring in pronounced biases [4]. 
 </p><br>
 </li>
