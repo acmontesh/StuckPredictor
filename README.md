@@ -2,7 +2,7 @@
 ----------------------------------------------------------------
 By Abraham Montes. 2021
 
-##Summary
+##Theory
 The proposed methodology to build the predictor is summarized in the following schematic: <br>
 <img src="img/methodology.png" /> 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; *Figure 1. Methodology schematic*
@@ -141,14 +141,16 @@ The resultant matrix contains the contrast measures for each channel and the la-
 Finally, the problem of detecting anomalous events in time series is generally linked to a pronounced imbalance of the classes, i.e., a very small number of positive cases (anomalies) compared to the number of negative (nominal) cases. There are different solutions proposed in the literature to perform data “augmentation”, from very simple ones (such as replication, noise injection, position inversion, among oth-ers) to more complex ones, such as the use of generative models (e.g. generative ad-versarial networks, GANs) [16].
 </p><br>
 
-| &emsp;&emsp;&emsp;RC1 &emsp;&emsp;&ensp; |&emsp;&emsp;&emsp;RC2 &emsp;&emsp;&emsp; | &emsp;&emsp;&emsp;...  &emsp;&emsp;&emsp;&ensp; | Anomalous?  &ensp;&ensp;&ensp;    |
+| &emsp;&emsp;&emsp;RC1 &emsp;&emsp;&emsp;&emsp;&emsp; |&emsp;&emsp;&emsp;RC2 &emsp;&emsp;&emsp;&emsp;&emsp;&ensp; | &emsp;&emsp;&emsp;...  &emsp;&emsp;&emsp;&ensp; | Anomalous?  &ensp;&ensp;&ensp;    |
 | MSE | $\sigma$ | $\vartheta$ | MSE | $\sigma$ | $\vartheta$ | MSE | $\sigma$ | $\vartheta$ | Anomalous? |
 | --- | -------- | ----------- | --- | -------- | ----------- | --- | -------- | ----------- | ---------- |
+| 1.62 | 0.25  | 0.89 | 0.77 | 0.01 | 0.10 | ... | ... | ... | 0 |
+| 1.69 | 0.21 | 0.74 | 0.24 | 0.03 | 0.15 | ... | ... | ... | 1 |
+| ... | ...| ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
-| Row 1 Column 1 | Row 1 Column 2 | Row 1 Column 3 |
-| Row 2 Column 1 | Row 2 Column 2 | Row 2 Column 3 |
-| Row 3 Column 1 | Row 3 Column 2 | Row 3 Column 3 |
 
+
+<br>
 <p>
 We propose to stick to the simplest at first. In many occasions the resampling or replication of the positive cases results in classifiers with good performance, without incurring in pronounced biases [4]. 
 </p><br>
