@@ -1,9 +1,9 @@
-# Pipe Sticking Predictor
+<h1> Pipe Sticking Predictor </h1> 
 ----------------------------------------------------------------
 By Abraham Montes. 2021
 
 
-##Executive Summary
+## Executive Summary
 
 
 <p>
@@ -12,7 +12,7 @@ This code is an application a proposed methodology for building anomaly predicto
 </p>
 
 
-##Theory
+## Theory
 
 
 The proposed methodology to build the predictor is summarized in the following schematic: <br>
@@ -29,7 +29,7 @@ The construction of the predictor machine is based on the problem division appro
 
 These windows should be selected near the actual positive cases, so the predictor machine as a whole learns to identify patterns that warn the driller of the imminent occurrence of such events. This window will be referred to as forecast window. Next, these modules will be explained.
     </p>
-###Stages
+### Stages
 <ol>
     <strong><li>E.D.A.: </strong><p>
     This module involves the foundational task for the entire process. It focuses on understanding the problem and seeks to obtain the dimensions of the feature vectors that will feed the nominal streams predictor. It is important to account for horizontal and vertical correlations. i.e., correlation across time on each channel (or sensor read-ing), and correlation between channels, as suggested by <a href="https://link.springer.com/book/10.1007/978-3-319-47578-3">Aggarwal, 2017</a>. </p><br><p>
@@ -176,16 +176,24 @@ We propose to stick to the simplest at first. In many occasions the resampling o
 <p>
 Figure 4 and 5 show the pseudocode and the object-oriented design schematic (class diagram) that describes the case of application (pipe sticking predictor):
 </p>
+<br>
 
-<img src="img/pscode1.jpg" /> 
+
+<img src="img/pscode1.jpg" />  
+
 <img src="img/pscode2.jpg" /> 
+
 
 *Figure 4. Pseudocode for the recurrent erlenmeyer and the supervised erlenmeyer, which are the classes where the prediction and the classification phases of the methodology are carried out.*
 
 <br>
 
-<img src="img/classdiag2.png" /> 
+
+<img src="img/classdiag2.png" />
+
+
 <img src="img/classdiag3.png" /> 
+
 
 *Figure 5. Class diagram of the software that implements the methodology to build a pipe sticking predictor.*
 
