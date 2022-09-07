@@ -118,7 +118,7 @@ $$
 MSE^{(k)} = \frac{1}{F} \sum_{t=1}^{F} \left (\delta_t^{(k)} \right)^2
 $$
 
-Where $\delta_t^{(k)}={c_{t,True}}^{(k)}-{\hat{c}_{t}}^{(k)}$ , ${c_{t,True}}$ is the real data point of channel  $k$  at time $t$ and ${\hat{c}_{t}}^{(k)}$ is the predicted value of channel $k$ at time $t$. <br><br>
+Where $ \delta_t^{(k)}={c_{t,True}}^{(k)}-{\hat{c}_{t}}^{(k)} $, ${c_{t,True}}$ is the real data point of channel  $k$  at time $t$ and ${\hat{c}_{t}}^{(k)}$ is the predicted value of channel $k$ at time $t$. <br><br>
 
 <br>
 </li> 
@@ -126,7 +126,7 @@ Where $\delta_t^{(k)}={c_{t,True}}^{(k)}-{\hat{c}_{t}}^{(k)}$ , ${c_{t,True}}$ i
 <li>
 <strong>
 
-Standard deviation of the squared deviations ($\sigma$): </strong>
+Standard deviation of the squared deviations </strong> ( $\sigma$ ): 
 
 It allows to measure the dispersion of the deviations with respect to the nominal condition forecasting. i.e., it allows to capture the presence of abrupt jumps of the signal in the forecast window. As it can be noted, a collective anomaly would not have any relevant contrast in this predictor. Here is how to calculate this predictor for a forecast window $\bar{F}$:
 
@@ -139,7 +139,7 @@ Where $\overline{{\delta_t^{(k)}}^2 } = \frac{1}{F} \sum_{t=1}^F \left( {\delta_
 </li><br>
 <li> <strong>
 
-Kurtosis of squared deviations ($\vartheta$): </strong>
+Kurtosis of squared deviations </strong> ( $\vartheta$ ): 
 
 This is a measure of the "heaviness" of the tail in the data distribution, assuming normality —and therefore of the amount of noise. However, it is also a measure of contrast applicable to other distributions, and still useful for detecting contextual anomalies (<a href="https://psycnet.apa.org/record/1998-04950-005">DeCarlo, 1997</a>). As referred in the literature, this outlier score is highly handful in many anomaly de-tection applications (<a href="https://link.springer.com/book/10.1007/978-3-319-47578-3">Aggarwal, 2017</a>) because the fourth power allows to further highlight deviations from the mean in the forecast window.
 
