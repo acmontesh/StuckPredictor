@@ -120,10 +120,8 @@ $$
 
 <br>
 </li> 
-<br>
 
-
-Where  $\delta_t^{(k)} = {c_{t,True}}^{(k)}-{\hat{c}_{t}}^{(k)}$  ,  ${c_{t,True}}$  is the real data point of channel  $k$  at time  $t$  and  ${\hat{c}_{t}}^{(k)}$  is the predicted value of channel $k$ at time $t$. <br><br>
+Where $\delta_t^{(k)} = {c_{t,True}}^{(k)}-{\hat{c}_{t}}^{(k)}$ , ${c_{t,True}}$ is the real data point of channel  $k$  at time $t$ and ${\hat{c}_{t}}^{(k)}$ is the predicted value of channel $k$ at time $t$. <br><br>
 
 
 <li>
