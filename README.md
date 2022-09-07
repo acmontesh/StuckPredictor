@@ -184,10 +184,10 @@ Figure 4 and 5 show the pseudocode and the object-oriented design schematic (cla
 <br>
 
 
-<img src="img/pscode1.jpg" />  
+<img src="img/pscode1.JPG" />  
 
 
-<img src="img/pscode2.jpg" /> 
+<img src="img/pscode2.JPG" /> 
 
 
 *Figure 4. Pseudocode for the recurrent erlenmeyer and the supervised erlenmeyer, which are the classes where the prediction and the classification phases of the methodology are carried out.*
