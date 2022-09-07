@@ -1,6 +1,7 @@
 <h1> Pipe Sticking Predictor </h1> 
 
 By Abraham Montes. 2021
+<a href="https://repository.javeriana.edu.co/handle/10554/59135">Complete work repo (in spanish)</a>
 
 
 ## Executive Summary
