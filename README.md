@@ -66,7 +66,7 @@ To build the instances set, given the second forecasting approach, 2 window size
 
 <img src="img/windowsliding.jpg" /> 
 
-*Figure 2. Time windows sliding to build the instances tensor for the prediction module. The feed window is slid over the feature channels for the RC (in this case the channel 0). The forecast window accounts for the RC alone. Once the sliding is finished, a tensor of size * $N\times T\times D$ *and a matrix $N\times F$ are obtained.*
+*Figure 2. Time windows sliding to build the instances tensor for the prediction module. The feed window is slid over the feature channels for the RC (in this case the channel 0). The forecast window accounts for the RC alone. Once the sliding is finished, a tensor of size* $N\times T\times D$ *and a matrix $N\times F$ are obtained.*
 
 <br>
 
