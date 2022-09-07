@@ -1,6 +1,7 @@
 <h1> Pipe Sticking Predictor </h1> 
 
 By Abraham Montes. 2021
+<br>
 <a href="https://repository.javeriana.edu.co/handle/10554/59135">Complete work repo (in spanish)</a>
 
 
@@ -16,10 +17,11 @@ This code is an application a proposed methodology for building anomaly predicto
 ## Theory
 
 
-The proposed methodology to build the predictor is summarized in the following schematic: <br>
+The proposed methodology to build the predictor is summarized in the following schematic: 
+<br><br>
 <img src="img/methodology.png" /> 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; *Figure 1. Workflow schematic*
-<br>
+<br><br>
 This methodology uses CRISP-DM as a general framework, but was built specifically for building a pipe sticking predictor for the Colombian foothills. 
 
 
