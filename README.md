@@ -2,7 +2,9 @@
 ----------------------------------------------------------------
 By Abraham Montes. 2021
 
+
 ##Executive Summary
+
 
 <p>
 This code is an application a proposed methodology for building anomaly predictors in the drilling operation. It parts from feature selection and dataset construction, and then divides the problem into: 1) Prediction of nominals and 2) Classification of contrasts. The code presents a test of this workflow on several time series from distinct wells in the Colombian foothills. In this specific application, it proofed to be capable of leading to: 1) Robust predictors of nominals (measured with spread statistics) and 2) Robust classifiers (measured with classification performance indicators from the confussion matrix). 
