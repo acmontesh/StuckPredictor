@@ -117,8 +117,9 @@ It allows capturing the deviation from the nominal character in the window, high
 $$
 MSE^{(k)} = \frac{1}{F} \sum_{t=1}^{F} \left (\delta_t^{(k)} \right)^2
 $$
+<br>
 
-Where  $\delta_t^{(k)}={c_{t,True}}^{(k)}-{\hat{c}_{t}}^{(k)} , {c_{t,True}}$  is the real data point of channel  $k$  at time $t$ and ${\hat{c}_{t}}^{(k)}$ is the predicted value of channel $k$ at time $t$. <br><br>
+Where  $\delta_t^{(k)}={c_{t,True}}^{(k)}-{\hat{c}_{t}}^{(k)}$, ${c_{t,True}}$  is the real data point of channel  $k$  at time $t$ and ${\hat{c}_{t}}^{(k)}$ is the predicted value of channel $k$ at time $t$. <br>
 
 <br>
 </li> 
