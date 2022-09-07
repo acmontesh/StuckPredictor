@@ -66,7 +66,7 @@ To build the instances set, given the second forecasting approach, 2 window size
 
 <img src="img/windowsliding.jpg" /> 
 
-*Figure 2. Time windows sliding to build the instances tensor for the prediction module. The feed window is slid over the feature channels for the RC (in this case the channel 0). The forecast window accounts for the RC alone. Once the sliding is finished, a tensor of size* $N\times T\times D$ *and a matrix $N\times F$ are obtained.*
+*Figure 2. Time windows sliding to build the instances tensor for the prediction module. The feed window is slid over the feature channels for the RC (in this case the channel 0). The forecast window accounts for the RC alone. Once the sliding is finished, a tensor of size* $N\times T\times D$ *and a matrix* $N\times F$ *are obtained.*
 
 <br>
 
@@ -97,7 +97,7 @@ This search can be executed exhaustively, which would imply considerably high co
 
 <img src="img/runit.jpg" /> 
 
-*Figure 3. Topology of the recurrent predictor to be used for predicting nominal streams on each RC. The input instances are $T \times D$, where $T$ is the size of the feed window selected and $D$ is the number of channels. The number of output neurons is $F$, which is the selected size of the forecast window.*
+*Figure 3. Topology of the recurrent predictor to be used for predicting nominal streams on each RC. The input instances are* $T \times D$ *, where* $T$ *is the size of the feed window selected and* $D$ *is the number of channels. The number of output neurons is* $F$ *, which is the selected size of the forecast window.*
 
 <br>
 
@@ -112,6 +112,8 @@ It is noteworthy that the outlier scores are part of the search space. If the cl
 
 <strong>Mean square error (MSE): </strong> 
 It allows capturing the deviation from the nominal character in the window, highlighting peaks and collective anomalies by squared powering. For a predicted forecast window  $\bar{F}$  and, the MSE is calculated as: <br>
+<br>
+
 $$
 MSE^{(k)} = \frac{1}{F} \sum_{t=1}^{F} \left (\delta_t^{(k)} \right)^2
 $$
@@ -120,7 +122,9 @@ $$
 </li> 
 <br>
 
+
 Where  $\delta_t^{(k)} = {c_{t,True}}^{(k)}-{\hat{c}_{t}}^{(k)}$  ,  ${c_{t,True}}$  is the real data point of channel  $k$  at time  $t$  and  ${\hat{c}_{t}}^{(k)}$  is the predicted value of channel $k$ at time $t$. <br><br>
+
 
 <li>
 <strong>
