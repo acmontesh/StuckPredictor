@@ -174,15 +174,18 @@ We propose to stick to the simplest at first. In many occasions the resampling o
 </p><br>
 </li>
 </ol>
-##Code Structure
+
+## Code Structure
 
 <p>
 Figure 4 and 5 show the pseudocode and the object-oriented design schematic (class diagram) that describes the case of application (pipe sticking predictor):
 </p>
+
 <br>
 
 
 <img src="img/pscode1.jpg" />  
+
 
 <img src="img/pscode2.jpg" /> 
 
